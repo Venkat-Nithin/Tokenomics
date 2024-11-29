@@ -7,7 +7,11 @@ function Homepage() {
       <header className="hero-section">
         <div className="logo-container">
           {/* Updated logo placement */}
-          <img src="C:\Users\venka\Desktop\My stuff\Study stuff\Tokenomics\tokenomics\public\flamingo-logo.jpg" alt="Flamingo Logo" className="flamingo-logo" />
+          <img
+            src="/images/flamingo-logo.jpg" // Updated to use the relative path
+            alt="Flamingo Logo"
+            className="flamingo-logo"
+          />
         </div>
         <h1>Welcome to Flamingo Coin</h1>
         <p>Your gateway to the world of decentralized finance.</p>
