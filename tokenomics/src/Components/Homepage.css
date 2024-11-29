@@ -5,7 +5,7 @@
 }
 
 .hero-section {
-  background-color: #ffeff0; /* Soft background for hero section */
+  background-color: #ffeff0; 
   padding: 3rem 0;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -30,18 +30,68 @@ p {
   color: #333;
 }
 
-.introduction, .lore {
+.introduction, .lore, .course-curriculum {
   margin: 2rem 0;
 }
 
-.introduction h2, .lore h2 {
+.introduction h2, .lore h2, .course-curriculum h2 {
   font-size: 2rem;
   color: #ff85a1;
 }
 
-.introduction p, .lore p {
+.introduction p, .lore p, .course-curriculum p {
   font-size: 1.1rem;
   color: #555;
+}
+
+.course-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.course-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 28%;
+  text-align: left;
+}
+
+.course-item h3 {
+  font-size: 1.5rem;
+  color: #ff85a1;
+}
+
+.cta-button {
+  background-color: #ff85a1;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #e56f8b;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -55,5 +105,15 @@ p {
 
   p {
     font-size: 1rem;
+  }
+
+  .course-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-item {
+    width: 80%;
+    margin: 1rem 0;
   }
 }
